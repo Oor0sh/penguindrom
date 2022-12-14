@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+i {
+    font-size: 30px;
+    display: inline-block;
+    color: darkblue;
+    margin-top: 10px;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#logoLink {
+    display: block;
+    width: fit-content;
+}
+
+p {
+    font-size: 1.55rem;
+}
+
+#authorHeader{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+
+        #logo {
+            width: 20%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("../images/logo.png");
+        }
+
+        #navbar {
+            width: 50%;
+            display: flex;
+
+            #navigacija {
+                display: inline-block;
+                width: 100%;
+                font-size: larger;
+
+                ul {
+
+                    display: flex;
+                    list-style: none;
+                    box-sizing: border-box;
+                    margin: 0px;
+                    padding: 0px;
+
+                    li {
+                        position: relative;
+                        padding: 1%;
+                    }
+                }
+            }
+        }
+    }
+
+    #cover {
+        width: 100%;
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../images/cover.jpg");
+        align-items: center;
+        align-content: space-around;
+        display: flex;
+        box-shadow: 0px 0px 40px 0px;
+
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 40%;
+        }
+
+        #coverTitle {
+            letter-spacing: 30px;
+            margin: 0px auto;
+            font-weight: bold;
+        }
+    }
+
+}
+
+.video-container {
+    //height: 300px;
+    //width: 300px;
+    position: relative;
+
+    video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        z-index: 0;
+    }
+}
+
+#content {
+    width: 80%;
+    margin: 0px auto;
+
+    #info {
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-between;
+
+        #infoText {
+            margin-top: 5%;
+            width: 50%;
+            font-size: 1.75rem;
+
+            .species {
+                display: none;
+            }
+
+        }
+
+        #infoImage {
+            width: 40%;
+            height: 40rem;
+            // background: url("images/content.jpg");
+            box-shadow: 5px 10px 10px 5px;
+            margin-top: 5%;
+        }
+    }
+
+    #info2 {
+        margin-bottom: 10%;
+
+        #title {
+            margin: 3rem 0px 4rem 0px;
+        }
+    }
+
+    #dynamicInfo {
+        display: flex;
+        justify-content: space-between;
+
+        #dynamicImage {
+            width: 60%;
+            height: 30rem;
+            background-position: center;
+            background-size: cover;
+            box-shadow: 5px 10px 10px 5px;
+        }
+
+        #dynamic {
+            width: 30%;
+
+            #dynamicInformation {
+                #reasonWhy {
+                    width: 100%;
+                }
+
+                font-size: 1.5rem;
+                margin-top: 10%;
+            }
+        }
+    }
+
+    #donations {
+        margin: 5% 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        #donationsContent {
+            width: 40%;
+            padding: 2%;
+
+            #donation {
+                margin: 5% 0px;
+            }
+        }
+
+        #donationsImg {
+            width: 25%;
+            //height: 30rem;
+            background-image: url("../images/hhands.jpg");
+            background-size: cover;
+            box-shadow: 5px 10px 10px 5px;
+            //position: relative;
+        }
+
+    }
+
+    .modal-header {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 17.5rem;
+        background-image: url("../images/thankyoualert1.jpg");
+        background-size: cover;
+
+    }
+
+    form {
+        padding: 0;
+        margin: 0px auto;
+
+        input {
+            margin: 4% 0px;
+            font-size: 1.25rem;
+        }
+
+        input[type=submit] {
+            background-color: #0078d0;
+            color: white;
+            padding: 2% 0;
+        }
+
+        span {
+            color: red;
+        }
+
+        p:first-of-type {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        label {
+            font-size: 0.75rem;
+            margin: 0;
+        }
+
+        input[type=text] {
+            border: 1px solid gray;
+            padding: 2%;
+            margin: 2%;
+        }
+
+        span {
+            padding: 0px;
+            margin: 0px;
+        }
+
+    }
+
+    .button-71 {
+        background-color: #0078d0;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        outline: 0;
+        padding: 16px 21px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button-71:before {
+        background-color: initial;
+        background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+        border-radius: 125px;
+        content: "";
+        height: 50%;
+        left: 4%;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        transition: all .3s;
+        width: 92%;
+    }
+
+    .button-71:hover {
+        box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+        transform: scale(1.05);
+    }
+
+    @media (min-width: 768px) {
+        .button-71 {
+            padding: 16px 48px;
+        }
+    }
+}
+
+#footerAuthor{
+    background-color: #0078d0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    position:fixed;
+
+    p {
+        margin: 0px auto;
+    }
+}
+
+footer {
+    background-color: #0078d0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    position: relative;
+
+    p {
+        margin: 0px auto;
+    }
+}
+
+#author {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    #infoAuthor {
+        width: 30%;
+        p{
+            margin: 10% 0;
+        }
+
+    }
+
+    #image {
+
+        width: 20%;
+        height: 25rem;
+        background-image: url("../images/author.JPG");
+        background-size: cover;
+    }
+}
+
+/*@media screen and (max-width: 1025px){
+    #cover{
+        background-image: url("images/seka.jpg");
+    }
+    #coverTitle{
+        color: green;
+    }
+
+}
+@media screen and (min-width: 1026px){
+
+    #cover{
+        #coverTitle{
+            color: red;
+        } 
+        #background-video{
+            display: inline-block;
+        }       
+    }
+    
+}
+*/

@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Oswald', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+i {
+  font-size: 30px;
+  display: inline-block;
+  color: darkblue;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#logoLink {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+p {
+  font-size: 1.55rem;
+}
+
+#authorHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 600px;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+}
+
+header nav #logo {
+  width: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/logo.png");
+}
+
+header nav #navbar {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav #navbar #navigacija {
+  display: inline-block;
+  width: 100%;
+  font-size: larger;
+}
+
+header nav #navbar #navigacija ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+header nav #navbar #navigacija ul li {
+  position: relative;
+  padding: 1%;
+}
+
+header #cover {
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/cover.jpg");
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 40px 0px;
+          box-shadow: 0px 0px 40px 0px;
+}
+
+header #cover h1 {
+  font-size: 5rem;
+  margin-bottom: 40%;
+}
+
+header #cover #coverTitle {
+  letter-spacing: 30px;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+#content {
+  width: 80%;
+  margin: 0px auto;
+}
+
+#content #info {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#content #info #infoText {
+  margin-top: 5%;
+  width: 50%;
+  font-size: 1.75rem;
+}
+
+#content #info #infoText .species {
+  display: none;
+}
+
+#content #info #infoImage {
+  width: 40%;
+  height: 40rem;
+  -webkit-box-shadow: 5px 10px 10px 5px;
+          box-shadow: 5px 10px 10px 5px;
+  margin-top: 5%;
+}
+
+#content #info2 {
+  margin-bottom: 10%;
+}
+
+#content #info2 #title {
+  margin: 3rem 0px 4rem 0px;
+}
+
+#content #dynamicInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#content #dynamicInfo #dynamicImage {
+  width: 60%;
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 5px 10px 10px 5px;
+          box-shadow: 5px 10px 10px 5px;
+}
+
+#content #dynamicInfo #dynamic {
+  width: 30%;
+}
+
+#content #dynamicInfo #dynamic #dynamicInformation {
+  font-size: 1.5rem;
+  margin-top: 10%;
+}
+
+#content #dynamicInfo #dynamic #dynamicInformation #reasonWhy {
+  width: 100%;
+}
+
+#content #donations {
+  margin: 5% 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#content #donations #donationsContent {
+  width: 40%;
+  padding: 2%;
+}
+
+#content #donations #donationsContent #donation {
+  margin: 5% 0px;
+}
+
+#content #donations #donationsImg {
+  width: 25%;
+  background-image: url("../images/hhands.jpg");
+  background-size: cover;
+  -webkit-box-shadow: 5px 10px 10px 5px;
+          box-shadow: 5px 10px 10px 5px;
+}
+
+#content .modal-header {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 17.5rem;
+  background-image: url("../images/thankyoualert1.jpg");
+  background-size: cover;
+}
+
+#content form {
+  padding: 0;
+  margin: 0px auto;
+}
+
+#content form input {
+  margin: 4% 0px;
+  font-size: 1.25rem;
+}
+
+#content form input[type=submit] {
+  background-color: #0078d0;
+  color: white;
+  padding: 2% 0;
+}
+
+#content form span {
+  color: red;
+}
+
+#content form p:first-of-type {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#content form label {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+#content form input[type=text] {
+  border: 1px solid gray;
+  padding: 2%;
+  margin: 2%;
+}
+
+#content form span {
+  padding: 0px;
+  margin: 0px;
+}
+
+#content .button-71 {
+  background-color: #0078d0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+#content .button-71:before {
+  background-color: initial;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  width: 92%;
+}
+
+#content .button-71:hover {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset, rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+          box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset, rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  #content .button-71 {
+    padding: 16px 48px;
+  }
+}
+
+#footerAuthor {
+  background-color: #0078d0;
+  width: 100%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  bottom: 0;
+  position: fixed;
+}
+
+#footerAuthor p {
+  margin: 0px auto;
+}
+
+footer {
+  background-color: #0078d0;
+  width: 100%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  bottom: 0;
+  position: relative;
+}
+
+footer p {
+  margin: 0px auto;
+}
+
+#author {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5%;
+}
+
+#author #infoAuthor {
+  width: 30%;
+}
+
+#author #infoAuthor p {
+  margin: 10% 0;
+}
+
+#author #image {
+  width: 20%;
+  height: 25rem;
+  background-image: url("../images/author.JPG");
+  background-size: cover;
+}
+
+/*@media screen and (max-width: 1025px){
+    #cover{
+        background-image: url("images/seka.jpg");
+    }
+    #coverTitle{
+        color: green;
+    }
+
+}
+@media screen and (min-width: 1026px){
+
+    #cover{
+        #coverTitle{
+            color: red;
+        } 
+        #background-video{
+            display: inline-block;
+        }       
+    }
+    
+}
+*/
+/*# sourceMappingURL=style.css.map */
